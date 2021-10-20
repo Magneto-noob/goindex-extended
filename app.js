@@ -6221,24 +6221,7 @@ function file_video(path) {
       text: "MXPlayer(Free)",
       href: `intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${path};end`,
     },
-    {
-      text: "MXPlayer(Pro)",
-      href: `intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${path};end`,
-    },
-    { text: "nPlayer", href: `nplayer-${url}` },
-    { text: "VLC", href: `vlc://${url}` },
-    { text: "PotPlayer", href: `potplayer://${url}` },
-  ]
-    .map(
-      (it) =>
-        `<li class="mdui-menu-item"><a href="${it.href}" class="mdui-ripple">${it.text}</a></li>`
-    )
-    .join("");
-  player_items += `<li class="mdui-divider"></li>
-                   <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">Copy Link</a></li>`;
-
-      
-        
+     
      
       <ul class="mdui-menu" id="player-items">${player_items}</ul>`;
   const content = `
@@ -6256,8 +6239,7 @@ function file_video(path) {
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-	`;
+
   $("#content").html(content);
   $("#copy-link").on("click", () => {
     copyToClipboard(url);
@@ -6295,8 +6277,7 @@ function file_audio(path) {
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-	`;
+
   $("#content").html(content);
 }
 function file_pdf(path) {
@@ -6315,11 +6296,9 @@ function file_pdf(path) {
 	  <input class="mdui-textfield-input" type="text" value="${display_name}"/>
   </div>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
-  <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-	`;
+ 
   $("#content")
     .removeClass("mdui-container")
     .addClass("mdui-container-fluid")
@@ -6389,8 +6368,7 @@ function file_image(path) {
 	</div>
         <br>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-    `;
+
   $("#content").html(content);
   $("#leftBtn, #rightBtn").click((e) => {
     let target = $(e.target);
