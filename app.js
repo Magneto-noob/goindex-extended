@@ -270,7 +270,7 @@
         return -1;
       },
       R =
-        "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",
+        "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|multiple|open|readonly|required|scoped",
       M = "[\\x20\\t\\r\\n\\f]",
       I = "(?:\\\\.|[\\w-]|[^\0-\\xa0])+",
       W =
@@ -6242,7 +6242,7 @@ function file_video(path) {
   });
   const dp = new DPlayer({
     container: document.getElementById("dplayer"),
-    loop: false,
+
     screenshot: true,
     preload: "auto",
     video: {
