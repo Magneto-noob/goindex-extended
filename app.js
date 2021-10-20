@@ -6179,7 +6179,7 @@ function file_code(path) {
 	<input class="mdui-textfield-input" type="text" value="${file_name}"/>
 </div>
 <div class="mdui-textfield">
-	<label class="mdui-textfield-label">Download Link</label>
+	
 	<input class="mdui-textfield-input" type="text" value="${href}"/>
 </div>
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -6234,10 +6234,7 @@ function file_video(path) {
 	  <label class="mdui-textfield-label">File Name</label>
 	  <input class="mdui-textfield-input" type="text" value="${file_name}"/>
   </div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
+	
 </div>
 
   $("#content").html(content);
@@ -6272,10 +6269,7 @@ function file_audio(path) {
 	  <label class="mdui-textfield-label">File Name</label>
 	  <input class="mdui-textfield-input" type="text" value="${file_name}"/>
   </div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
+	
 </div>
 
   $("#content").html(content);
@@ -6295,10 +6289,7 @@ function file_pdf(path) {
 	  <label class="mdui-textfield-label">File Name</label>
 	  <input class="mdui-textfield-input" type="text" value="${display_name}"/>
   </div>
-	<div class="mdui-textfield">
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
- 
+
   $("#content")
     .removeClass("mdui-container")
     .addClass("mdui-container-fluid")
@@ -6362,11 +6353,7 @@ function file_image(path) {
 	  <label class="mdui-textfield-label">File Name</label>
 	  <input class="mdui-textfield-input" type="text" value="${file_name}"/>
   </div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-        <br>
+	
 </div>
 
   $("#content").html(content);
